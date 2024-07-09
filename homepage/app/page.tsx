@@ -1,7 +1,11 @@
 // import Image from "next/image";
+import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+const SetTheme = dynamic(() => import("../components/SetTheme"), {
+  ssr: false,
+}); // this can be moved to navbar component
 
 export default function Home() {
   return (
@@ -50,7 +54,7 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section className="flex justify-around mb-52">
+      <section className="flex justify-around  mb-52">
         <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left">
           <a
             href=""
