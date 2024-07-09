@@ -1,4 +1,6 @@
 // import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,12 +24,12 @@ export default function Home() {
                   </div>
                   <div className="w-full max-w-sm space-y-2">
                     <form className="flex gap-2">
-                      <input
+                      <Input
                         type="email"
                         placeholder="Enter your email"
                         className="max-w-lg flex-1"
                       />
-                      <button type="submit">Get Started</button>
+                      <Button type="submit">Get Started</Button>
                     </form>
                     <p className="text-xs text-muted-foreground">
                       Sign up to experience the future of work.{" "}
