@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-const SetTheme = () => {
+const SetTheme = ({children}) => {
     const [theme, setTheme] = useState(global.window?.__theme || 'light');
 
     const isDark = theme === 'dark';
@@ -14,9 +14,14 @@ const SetTheme = () => {
         global.window.__onThemeChange = setTheme;
     }, []);
 
-    return <button onClick={toggleTheme}>{isDark ? <MoonIcon className="h-5 w-5" />
+    return (
+      <div>
+      {children}
+      <button onClick={toggleTheme}>{isDark ? <MoonIcon className="h-5 w-5" />
         : <SunIcon className="h-5 w-5" />
     }</button>;
+      </div>
+    );
 };
 
 export default SetTheme;

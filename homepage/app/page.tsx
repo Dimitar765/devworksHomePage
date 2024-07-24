@@ -7,6 +7,7 @@ const SetTheme = dynamic(() => import("../components/SetTheme"), {
   ssr: false,
 }); // this can be moved to navbar component
 
+
 export default function Home() {
   return (
     <main className="">
@@ -32,6 +33,9 @@ export default function Home() {
                         type="email"
                         placeholder="Enter your email"
                         className="max-w-lg flex-1"
+                        name="email"
+                        id='1'
+                        autoComplete="false"
                       />
                       <Button type="submit">Get Started</Button>
                     </form>

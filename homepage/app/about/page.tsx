@@ -6,13 +6,13 @@ function About() {
       <section className="min-h-screen flex place-items-center">
         <div className="min-w-[660px] mx-auto px-4 ">
           <div className="py-20 max-w-[900px] space-y-2">
-            <h1 className="text-3xl font-bold px-12 py-4 text-center">
+            <h1 className="text-3xl font-bold px-12 py-4 space-y-2">
               About Us
             </h1>
             <p className="mt-4 min-w-[600px] px-12 text-muted-foreground text-pretty border-r-2 border-blue-300 md:text-xl">
-              Welcome to{" "}
+              [Welcome to] @{" "}
               <span className="text-blue-300 cursor-pointer">mbDevWorks</span>,
-              where we specialize in creating stunning, efficient, and
+              [where] we specialize in creating stunning, efficient, and
               user-friendly web applications tailored to your needs. Our team of
               experts leverages cutting-edge tools and processes to ensure your
               digital presence stands out. We utilize Figma for seamless,
