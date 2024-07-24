@@ -68,6 +68,7 @@ export default function Home() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
+                        TODO set up on hover color for dark and light mode accordingly
                         <h2 className="mb-3 text-2xl font-semibold">
                             Design{" "}
                             <span
