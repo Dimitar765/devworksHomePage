@@ -1,7 +1,14 @@
 import React from "react";
 
 function Contact() {
-    return <div>Contact</div>;
+    return (
+      <div className="">
+        <h1>
+          test heading
+        </h1>
+
+      </div>
+    )
 }
 
 export default Contact;

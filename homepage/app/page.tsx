@@ -1,9 +1,9 @@
 // import Image from "next/image";
 import dynamic from "next/dynamic";
-import {Button} from "@/components/ui/button";
-import {Input} from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
-
+// TODO:
 const SetTheme = dynamic(() => import("../components/SetTheme"), {
     ssr: false,
 }); // this can be moved to navbar component
@@ -73,8 +73,8 @@ export default function Home() {
                             Design{" "}
                             <span
                                 className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+                                -&gt;
+                            </span>
                         </h2>
                         <p className="m-0 max-w-[30ch] text-sm opacity-50">
                             Bring your own design. Start from scratch or use a template.
@@ -91,8 +91,8 @@ export default function Home() {
                             Develop{" "}
                             <span
                                 className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+                                -&gt;
+                            </span>
                         </h2>
                         <p className="m-0 max-w-[30ch] text-sm opacity-50">
                             We bring your idea to life, enhancing your brand.
@@ -109,8 +109,8 @@ export default function Home() {
                             Deploy{" "}
                             <span
                                 className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+                                -&gt;
+                            </span>
                         </h2>
                         <p className="m-0 max-w-[30ch] text-sm opacity-50">
                             Best cost-effective hosting solutions for your project.

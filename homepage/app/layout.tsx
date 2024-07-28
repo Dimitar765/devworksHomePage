@@ -1,11 +1,11 @@
-import type {Metadata} from "next";
-import {Inter} from "next/font/google";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import {getTheme} from "@/lib/getTheme";
+import { getTheme } from "@/lib/getTheme";
 import React from "react";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "placebo",
@@ -13,21 +13,21 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en" data-theme="dark">
-        <head>
-            <script dangerouslySetInnerHTML={{__html: getTheme}}/>
-            <title>placebo</title>
+            <head>
+                <script dangerouslySetInnerHTML={{ __html: getTheme }} />
+                <title>placebo</title>
 
-        </head>
-        <body className={inter.className}>
-        <Navbar/>
-        {children}
-        </body>
+            </head>
+            <body className={inter.className}>
+                <Navbar />
+                {children}
+            </body>
         </html>
     );
 }
