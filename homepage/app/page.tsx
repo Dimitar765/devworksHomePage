@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 // TODO:
+const 
 const SetTheme = dynamic(() => import("../components/SetTheme"), {
     ssr: false,
 }); // this can be moved to navbar component
-
 
 export default function Home() {
     return (
