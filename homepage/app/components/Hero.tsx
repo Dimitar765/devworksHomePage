@@ -9,7 +9,7 @@ export default function Hero() {
         <Typewriter text="<Web_Solutions_For_Your_Project/>" delay={50} />
       </h1>
       <p className="text-xl mb-8 text-green-300">
-        <Typewriter text="Web solutions that define your work" delay={30} />
+        <Typewriter text="Digital presence that define your work" delay={30} />
       </p>
       <Link href="/initialize-project">
         <Button
