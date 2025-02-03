@@ -6,7 +6,7 @@ import type React from "react";
 const vt323 = VT323({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "mbDevWorks",
+  title: "mbDevWorks - Retro-Inspired Web Development",
   description:
     "We create stunning, retro-inspired websites and web applications",
 };

@@ -2,10 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Terminal, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isHomePage = pathname === "/";
 
   return (
     <header className="border-b border-green-400">
@@ -26,36 +30,57 @@ export default function Header() {
           <ul
             className={`md:flex space-y-2 md:space-y-0 md:space-x-4 ${isMenuOpen ? "block" : "hidden"} absolute md:relative left-0 right-0 top-16 md:top-0 bg-gray-900 md:bg-transparent p-4 md:p-0 border-b border-green-400 md:border-none`}
           >
+            {isHomePage ? (
+              <>
+                <li>
+                  <a
+                    href="#services"
+                    className="text-green-400 hover:text-green-300 block"
+                  >
+                    &gt; Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    className="text-green-400 hover:text-green-300 block"
+                  >
+                    &gt; Portfolio
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#testimonials"
+                    className="text-green-400 hover:text-green-300 block"
+                  >
+                    &gt; Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="text-green-400 hover:text-green-300 block"
+                  >
+                    &gt; Contact
+                  </a>
+                </li>
+              </>
+            ) : (
+              <li>
+                <Link
+                  href="/"
+                  className="text-green-400 hover:text-green-300 block"
+                >
+                  &gt; Home
+                </Link>
+              </li>
+            )}
             <li>
               <Link
-                href="#services"
+                href="/initialize-project"
                 className="text-green-400 hover:text-green-300 block"
               >
-                &gt; Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#portfolio"
-                className="text-green-400 hover:text-green-300 block"
-              >
-                &gt; Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#testimonials"
-                className="text-green-400 hover:text-green-300 block"
-              >
-                &gt; Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className="text-green-400 hover:text-green-300 block"
-              >
-                &gt; Contact
+                &gt; Initialize_Project
               </Link>
             </li>
           </ul>
