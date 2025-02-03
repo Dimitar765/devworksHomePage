@@ -13,9 +13,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Terminal size={24} className="text-green-400" />
-            <span className="text-xl font-bold text-green-400">
-              RetroDevPro
-            </span>
+            <span className="text-xl font-bold text-green-400">mbDevWorks</span>
           </Link>
           <div className="md:hidden">
             <button
